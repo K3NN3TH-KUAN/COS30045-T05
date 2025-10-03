@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="load_files.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Data Visualization Dashboard</h1>
+            <p class="subtitle">Interactive analysis of energy consumption and pricing data</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="dashboard-grid">
+            <article class="chart-container">
+                <header>
+                    <h2>Energy Consumption vs Star Rating</h2>
+                    <p>Scatter plot showing the relationship between energy efficiency and consumption</p>
+                </header>
+                <div class="chart-wrapper">
+                    <div id="scatter-plot"></div>
+                </div>
+            </article>
+
+            <article class="chart-container">
+                <header>
+                    <h2>Screen Technology Distribution</h2>
+                    <p>Donut chart showing energy consumption by screen technology</p>
+                </header>
+                <div class="chart-wrapper">
+                    <div id="donut-chart"></div>
+                </div>
+            </article>
+
+            <article class="chart-container">
+                <header>
+                    <h2>55-inch TV Energy Consumption</h2>
+                    <p>Bar chart comparing energy usage across different screen types</p>
+                </header>
+                <div class="chart-wrapper">
+                    <div id="bar-chart"></div>
+                </div>
+            </article>
+
+            <article class="chart-container">
+                <header>
+                    <h2>ARE Spot Prices Trend</h2>
+                    <p>Line graph showing price fluctuations over time</p>
+                </header>
+                <div class="chart-wrapper">
+                    <div id="line-graph"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Data Visualization Project</p>
+        </div>
+    </footer>
+
+    <!-- Chart scripts -->
+    <script src="scatter.js"></script>
+    <script src="donut.js"></script>
+    <script src="bar.js"></script>
+    <script src="line.js"></script>
+</body>
+</html>
